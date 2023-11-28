@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(241, 241, 237); 
+}
+header {
+    background-image: url('./bg.jpg');
+    background-size: cover; 
+    width: 100vw;
+    height: 250px; 
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+  }
+.logo{
+    width: 130px; 
+    height: 130px;
+    border-radius: 90%; 
+    text-align: center;
+    overflow: hidden;
+}
+.foo{
+    background-color: rgb(212, 212, 212);
+    padding: 1em;
+}
+.vali{
+    float: right;
+}
