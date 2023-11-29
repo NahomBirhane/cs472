@@ -2,7 +2,7 @@ body{
     background-color: rgb(241, 241, 237); 
 }
 header {
-    background-image: url('./bg.jpg');
+    background-image: url('../images/bg.jpg');
     background-size: cover; 
     width: 100vw;
     height: 250px; 
