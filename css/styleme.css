@@ -1,0 +1,63 @@
+header{
+    background-image: url(../images/nana.jpeg);
+    background-position: center; 
+    background-size: cover; 
+    height: 250px;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.headTitle{
+    padding-top: 95px;
+    font-family:'Courier New', Courier, monospace;
+}
+.first::first-letter{
+    font-size: 40px;
+    color: black;
+}
+.name{
+    color: rgb(69, 13, 13);
+    font-weight: bolder;
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+a:hover{
+    text-decoration: underline;
+}
+.ImageSize {
+    width: 80%; 
+    height: 90%;
+    display: inline-block;
+    opacity: .8;
+}
+.ImageSize:hover {
+    transform: scale(1.07); 
+}
+.ImageSize1 {
+    width: 95%; 
+    height: 90%;
+    display: inline-block;
+    opacity: .8;
+}
+.ImageSize1:hover {
+    transform: scale(1.07); 
+}
+figcaption {
+    text-align: center;
+    margin-top: 5px; 
+}
+.img-section{
+    display: flex;
+}
+.foo{
+    padding: 20px;
+    background-color: #f3f2f1;
+}
+.valid{
+    display: inline;
+    float: right;
+}
