@@ -36,8 +36,8 @@ input, button {
     border-radius: 15px;
 }
 button{
-    width: 100px; /* Adjust the width as needed */
-  height: 30px; /* Adjust the height as needed */
+    width: 100px;
+  height: 30px;
   font-size: 14px;
   align-items: center;
 }
