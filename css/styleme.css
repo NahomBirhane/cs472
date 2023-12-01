@@ -29,6 +29,11 @@ header{
 main{
     padding: 20px;
 }
+
+ul{
+    list-style-type: circle;
+}
+
 .name{
     color: rgb(69, 13, 13);
     font-weight: bolder;
