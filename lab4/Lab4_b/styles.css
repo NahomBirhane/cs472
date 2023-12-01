@@ -27,24 +27,33 @@
 }
 
 .btn-reset {
-    background-color:bisque !important; /* Add !important to override default Bootstrap styles */
-    color: black !important; /* Add !important to override default Bootstrap styles */
+    background-color: white!important; 
+    color: blue !important;
+    border: blue;
+    font-weight: bold;
 }
 .btn-color{
-    background-color: bisque !important; /* Add !important to override default Bootstrap styles */
-    color: black !important; /* Add !important to override default Bootstrap styles */
-
+    background-color: white !important; 
+    color: orange !important; 
+    border: orange;
+    font-weight: bold;
 }
 .btn-add-product{
-    background-color: bisque!important; /* Add !important to override default Bootstrap styles */
-    color:black !important; /* Add !important to override default Bootstrap styles */
+    background-color: white!important; 
+    color: rgb(0, 174, 255)!important; 
+    border: red;
+    font-weight: bold;
 }
 
-
-.btn-reset:hover,
-.btn-color:hover,
+.btn-reset:hover{
+    background-color: #f3f2f1!important;
+    transition: color 1s;
+}
+.btn-color:hover{
+    background-color: #f3f2f1!important;
+    transition: color 1s;
+}
 .btn-add-product:hover {
-    background-color: aquamarine!important;
-    color: red !important;
-    
+    background-color: #f3f2f1!important;
+    transition: color 1s;
 }
