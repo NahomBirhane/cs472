@@ -1,0 +1,141 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f2f1;
+    font-family: "GDS Transport",arial,sans-serif;
+}
+nav,a{
+    text-decoration: none;
+    display: flex;
+    float: right;
+    padding-right: 9px;
+}
+a:hover{
+    transform: scale(1.07);
+    color: rgb(40, 40, 49); 
+}
+header{
+    padding-top: 15px;
+}
+.headerlogo{
+    display: flex;
+
+}
+.ptag{
+    margin-left: 10px;
+}
+.headertitle{
+    background-color: rgb(38, 91, 87);
+    color: white;
+    padding: 50px;
+}
+h1{
+    text-align: center;
+}
+
+.imglogo{
+    width: 40px; 
+    height: 40px;
+    border-radius: 2%; 
+    margin-left: 20px;
+    overflow: hidden;   
+}
+.login>p{
+    margin: 8px;
+    margin-left: 80px;
+    color: rgb(175, 175, 175);
+    padding-top: 20px;
+}
+h2,label{
+    margin-left: 80px;
+    padding-top: 20px;
+}
+
+button,img{
+    border-radius: 1%; 
+    border-color: aliceblue;
+    width: 90px;
+    height: 25px;
+}
+.buttx{
+    padding: 8px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border-width: 2px; 
+    border-style: solid;
+    border-radius: 5%;
+}
+.butt{
+    padding-right: 230px;
+    padding-left: 150px;
+    padding-top: 8px;
+    padding-bottom: 30px;
+    margin: 15px;
+    background-color: white;
+    margin-left: 80px;
+    border-radius: 3%;
+    border: none;
+}
+.butt1,textarea{
+    padding-right: 120px;
+    padding-left: 100px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    margin: 15px;
+    background-color: white;
+    margin-left: 80px;
+    border-radius: none;border-radius: none;
+    border: none;
+}
+#check{
+    display: inline-block;
+    padding: 0%;
+}
+
+aside {
+    width: 50%;
+    padding-top: 25px;
+    padding-right: 130px;
+    padding-left: 15px;
+    padding-bottom: 300px;
+    margin-top: 20px;
+    margin-left: 40px;
+    float: right;
+    font-weight:bold;
+    flex-direction: column;
+    color: rgb(92, 92, 92);
+    border: 1px solid rgb(212, 211, 211);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+  }
+  .xyz{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-radius: 3%;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    padding-top: 15px;
+    padding-right: 200px;
+    padding-left: 150px;
+    padding-bottom: 15px;
+  }
+
+footer{
+        background-color: rgb(212, 212, 212);
+        padding: 40px;
+}
+.foo{
+    padding-right: 20px;
+    float: right;
+    text-align: center;
+}
