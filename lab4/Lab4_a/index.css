@@ -1,0 +1,43 @@
+body{
+    font-family: "GDS Transport",arial,sans-serif;
+}
+
+.bodyx {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+.form-group{
+    padding: 10px;
+}
+
+#websiteURL,#firstName, #emailAddress, #password {
+    padding: 18px;
+    border-radius: 7px;
+}
+
+input, button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.button1{
+    background-color: rgb(30, 78, 239);
+    color: white;
+    width: 100px;
+    height: 50px; 
+    font-weight: bold;
+    border-radius: 15px;
+}
+button{
+    width: 100px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  font-size: 14px;
+  align-items: center;
+}
