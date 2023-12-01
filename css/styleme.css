@@ -1,26 +1,33 @@
 
 body{
     margin: 0px;
+    padding: 0px;
     font-family: "GDS Transport",arial,sans-serif;
 }
 
 header{
-    background-image: url(../images/nana.jpeg);
-    background-position: center; 
-    background-size: cover; 
-    height: 250px;
-    position: relative;
-    text-align: center;
-    color: white;
+    background-image: url(../images/slider.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 180px;
+    padding: 15px;
     font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    opacity: 0.9;
 }
 .headTitle{
-    padding-top: 95px;
+    padding-bottom: 50px;
     font-family:'Courier New', Courier, monospace;
 }
 .first::first-letter{
     font-size: 40px;
     color: black;
+}
+main{
+    padding: 20px;
 }
 .name{
     color: rgb(69, 13, 13);
