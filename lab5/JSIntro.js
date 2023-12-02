@@ -72,3 +72,14 @@ function reverse(str){
     return s;
 }
 console.log("The reversed string of jag testar =", reverse("jag testar"))
+
+
+//Q_6 findLongestWordLength
+
+let arr = ["Nahom", "Mango", "Michal"];
+// using pure function map
+let longestWord = arr.map(function (item) {
+  return item.length;
+});
+
+console.log("Length of the longest words:", longestWord);
