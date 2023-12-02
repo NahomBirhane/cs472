@@ -1,24 +1,16 @@
-
+// JAVASCRIPT INTRODUCTION HOME WORK
 //Q_1 Find the Max Number:
 function max(num1, num2){
 
     if(num1 > num2){
         return num1;
-    }else{
+    }else if(num1 < num2){
         return num2;
-    }
-   // alternative method using for loop
-// let max = -Infinity;
-// let i ;
-// for(i = 0; i < arguments.length; i++){
-//     if(arguments[i] > max){
-//         max = arguments[i];
-//     }
-// }
-// return max;
+    }else console.log("They are Equal!");
+    return num1;
 
 }
-let theMax = max(10,20);
+let theMax = max(10,10);
 console.log(theMax);
 
 // Q_2 function maxOfThree
@@ -71,15 +63,77 @@ function reverse(str){
     }
     return s;
 }
-console.log("The reversed string of jag testar =", reverse("jag testar"))
-
+console.log("The reversed string of: jag testar =",reverse("jag testar"))
 
 //Q_6 findLongestWordLength
-
+function findLongestWordLength(words) {
+    return words.reduce((maxLength, currentWord) => {
+        return Math.max(maxLength, currentWord.length);
+    }, 0);
+}
 let arr = ["Nahom", "Mango", "Michal"];
-// using pure function map
-let longestWord = arr.map(function (i) {
-  return i.length;
-});
+let longestLength = findLongestWordLength(arr);
+console.log("Length of the longest word:", longestLength);
 
-console.log("Length of the longest words:", longestWord);
+//Q_7 This programme does find the lonest word and it returns the length of the word.
+function filterLongWords(arr, len){
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i].length > len){
+            len = arr[i].length;
+        }
+    }
+    return len;
+}
+let arrNames = ["Nahom", "Michal", "Lenovox"];
+let wordLength = 5;
+console.log("The longest word on the given array is: ", filterLongWords(arrNames, wordLength));
+
+//Q_8 find the sqare value of the given numbers and display thier squared sum using functional programming
+function computeSumOfSquares(numbers){
+    return numbers.map(m=>m*m)
+                  .reduce((sum, current) => sum + current, 0);
+}
+console.log("The sum of the three numbers is: ", computeSumOfSquares([1,2,3]));
+
+//Q_9 Printing out all the odd numbers 
+function printOddNumbersOnly(myArr){
+         return myArr.filter(n => n % 2 !== 0) 
+               oddNum.forEach(numbers => {
+              console.log(numbers);
+    });
+   }
+console.log(printOddNumbersOnly([1,2,3,4,5,6,7]));
+
+//Q_10 This programme does add all the sqaured number of even numbers
+function computeSumOfSquaresOfEvensOnly(arrNum) {
+    return arrNum.filter(f => f % 2 === 0) 
+                 .map(m => m * m) 
+                 .reduce((x, y) => x + y, 0);
+}
+console.log("The Square sum of all even numbers is:", computeSumOfSquaresOfEvensOnly([1, 2, 3, 4]));
+
+//Q_11 Add numbers using pure function 
+
+// Add
+function sumNum(arr){
+   return arr.map(m => m).reduce((x,y) => x+y,0);
+}
+console.log("Here is the sum: " + sum([1,2,3,4]));
+
+// Multiply
+function multiplyNum(arr){
+    return arr.map(m => m).reduce((x,y) => x*y,1);
+ }
+ console.log("Here is the product: " + multiplyNum([1,2,3,4]));
+
+//Q_12 Display Fibonacci sequence of a give number
+function printFibo(n, a, b){
+    while(n > 0){
+        temp = a + b;
+        a = b;
+        b = temp;
+        n--;
+        console.log(temp);
+    }
+}
+console.log(" ", printFibo(8,0,1));
