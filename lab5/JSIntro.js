@@ -78,8 +78,8 @@ console.log("The reversed string of jag testar =", reverse("jag testar"))
 
 let arr = ["Nahom", "Mango", "Michal"];
 // using pure function map
-let longestWord = arr.map(function (item) {
-  return item.length;
+let longestWord = arr.map(function (i) {
+  return i.length;
 });
 
 console.log("Length of the longest words:", longestWord);
