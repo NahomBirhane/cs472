@@ -1,17 +1,18 @@
+
 // JAVASCRIPT INTRODUCTION HOME WORK
 //Q_1 Find the Max Number:
+
 function max(num1, num2){
 
     if(num1 > num2){
         return num1;
     }else if(num1 < num2){
         return num2;
-    }else console.log("They are Equal!");
-    return num1;
+    }else return "The numbers are Equal";
 
 }
-let theMax = max(10,10);
-console.log(theMax);
+let theMax = max(100,10);
+console.log("The largest number is: ",theMax);
 
 // Q_2 function maxOfThree
 function maxOfThree(){
@@ -24,15 +25,15 @@ function maxOfThree(){
    return maxOF3;
 }
 let result = maxOfThree(11,-2,3);
-console.log(result);
+console.log("The largest number is: ",result);
 
 //Q_3
 function isVowel(char){
    let vowels = "aeiouAEIOU";
-   return vowels.includes(char); // include works like contains in java and it returns true or false
+   return vowels.includes(char);
 }
 let Vowel = isVowel("e");
-console.log(Vowel);
+console.log("Is the character a vowel: ",Vowel);
 
 //Q_4  USING IMPERATIVE PROGRAMMING
 // a function sum()
@@ -97,10 +98,7 @@ console.log("The sum of the three numbers is: ", computeSumOfSquares([1,2,3]));
 
 //Q_9 Printing out all the odd numbers 
 function printOddNumbersOnly(myArr){
-         return myArr.filter(n => n % 2 !== 0) 
-               oddNum.forEach(numbers => {
-              console.log(numbers);
-    });
+         return myArr.filter(n => n % 2 !== 0);
    }
 console.log(printOddNumbersOnly([1,2,3,4,5,6,7]));
 
@@ -127,13 +125,17 @@ function multiplyNum(arr){
  console.log("Here is the product: " + multiplyNum([1,2,3,4]));
 
 //Q_12 Display Fibonacci sequence of a give number
-function printFibo(n, a, b){
-    while(n > 0){
+function printFibo(n, a, b) {
+    let result = "";
+    let temp;
+    while (n > 0) {
+        result += a + ",";
         temp = a + b;
         a = b;
         b = temp;
         n--;
-        console.log(temp);
     }
+    result = result.substring(0, result.length - 1);
+    return result;
 }
-console.log(" ", printFibo(8,0,1));
+console.log("Here is the series: ", printFibo(8, 0, 1));
