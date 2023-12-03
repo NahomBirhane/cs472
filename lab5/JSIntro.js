@@ -12,7 +12,7 @@ function max(num1, num2){
 
 }
 let theMax = max(100,10);
-console.log("The largest number is: ",theMax);
+console.log("Q_1 The largest number is: ",theMax);
 
 // Q_2 function maxOfThree
 function maxOfThree(){
@@ -25,7 +25,7 @@ function maxOfThree(){
    return maxOF3;
 }
 let result = maxOfThree(11,-2,3);
-console.log("The largest number is: ",result);
+console.log("Q_2 The largest number is: ",result);
 
 //Q_3
 function isVowel(char){
@@ -33,7 +33,7 @@ function isVowel(char){
    return vowels.includes(char);
 }
 let Vowel = isVowel("e");
-console.log("Is the character a vowel: ",Vowel);
+console.log("Q_3 Is the character a vowel: ",Vowel);
 
 //Q_4  USING IMPERATIVE PROGRAMMING
 // a function sum()
@@ -44,7 +44,7 @@ function sum(arr){
     }
     return totalSum;
 }
-console.log("The sum of 1 + 2 + 3 + 4 = " + sum([1,2,3,4]));
+console.log("Q_4a The sum of 1 + 2 + 3 + 4 = " + sum([1,2,3,4]));
 
 // b function multiply()
 function multiply(arr){
@@ -54,7 +54,7 @@ function multiply(arr){
     }
     return totalProduct;
 }
-console.log("The product of 1*2*3*4 = " + multiply([1,2,3,4]));
+console.log("Q_4b The product of 1*2*3*4 = " + multiply([1,2,3,4]));
 
 //Q_5 function that reverse a string in reverse order
 function reverse(str){
@@ -64,7 +64,7 @@ function reverse(str){
     }
     return s;
 }
-console.log("The reversed string of: jag testar =",reverse("jag testar"))
+console.log("Q_5 The reversed string of: jag testar =",reverse("jag testar"))
 
 //Q_6 findLongestWordLength
 function findLongestWordLength(words) {
@@ -74,7 +74,7 @@ function findLongestWordLength(words) {
 }
 let arr = ["Nahom", "Mango", "Michal"];
 let longestLength = findLongestWordLength(arr);
-console.log("Length of the longest word:", longestLength);
+console.log("Q_6 Length of the longest word:", longestLength);
 
 //Q_7 This programme does find the lonest word and it returns the length of the word.
 function filterLongWords(arr, len){
@@ -87,20 +87,20 @@ function filterLongWords(arr, len){
 }
 let arrNames = ["Nahom", "Michal", "Lenovox"];
 let wordLength = 5;
-console.log("The longest word on the given array is: ", filterLongWords(arrNames, wordLength));
+console.log("Q_7 The longest word on the given array is:", filterLongWords(arrNames, wordLength));
 
 //Q_8 find the sqare value of the given numbers and display thier squared sum using functional programming
 function computeSumOfSquares(numbers){
     return numbers.map(m=>m*m)
                   .reduce((sum, current) => sum + current, 0);
 }
-console.log("The sum of the three numbers is: ", computeSumOfSquares([1,2,3]));
+console.log("Q_8 The sum of the three numbers is: ", computeSumOfSquares([1,2,3]));
 
 //Q_9 Printing out all the odd numbers 
 function printOddNumbersOnly(myArr){
          return myArr.filter(n => n % 2 !== 0);
    }
-console.log(printOddNumbersOnly([1,2,3,4,5,6,7]));
+console.log("Q_9 Printing odd numbers from a given array element: ",printOddNumbersOnly([1,2,3,4,5,6,7]));
 
 //Q_10 This programme does add all the sqaured number of even numbers
 function computeSumOfSquaresOfEvensOnly(arrNum) {
@@ -108,7 +108,7 @@ function computeSumOfSquaresOfEvensOnly(arrNum) {
                  .map(m => m * m) 
                  .reduce((x, y) => x + y, 0);
 }
-console.log("The Square sum of all even numbers is:", computeSumOfSquaresOfEvensOnly([1, 2, 3, 4]));
+console.log("Q_10 The Square sum of all even numbers is:", computeSumOfSquaresOfEvensOnly([1, 2, 3, 4]));
 
 //Q_11 Add numbers using pure function 
 
@@ -116,13 +116,13 @@ console.log("The Square sum of all even numbers is:", computeSumOfSquaresOfEvens
 function sumNum(arr){
    return arr.map(m => m).reduce((x,y) => x+y,0);
 }
-console.log("Here is the sum: " + sum([1,2,3,4]));
+console.log("Q_11a Here is the sum: " + sum([1,2,3,4]));
 
 // Multiply
 function multiplyNum(arr){
     return arr.map(m => m).reduce((x,y) => x*y,1);
  }
- console.log("Here is the product: " + multiplyNum([1,2,3,4]));
+ console.log("Q_11b Here is the product: " + multiplyNum([1,2,3,4]));
 
 //Q_12 Display Fibonacci sequence of a give number
 function printFibo(n, a, b) {
@@ -138,4 +138,4 @@ function printFibo(n, a, b) {
     result = result.substring(0, result.length - 1);
     return result;
 }
-console.log("Here is the series: ", printFibo(8, 0, 1));
+console.log("Q_12 Here is the series: ", printFibo(8, 0, 1));
