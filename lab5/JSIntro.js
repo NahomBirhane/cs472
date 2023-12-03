@@ -1,7 +1,6 @@
 
 // JAVASCRIPT INTRODUCTION HOME WORK
 //Q_1 Find the Max Number:
-
 function max(num1, num2){
 
     if(num1 > num2){
@@ -76,14 +75,9 @@ let arr = ["Nahom", "Mango", "Michal"];
 let longestLength = findLongestWordLength(arr);
 console.log("Q_6 Length of the longest word:", longestLength);
 
-//Q_7 This programme does find the lonest word and it returns the length of the word.
+//Q_7 This programme does find the longest word and it returns the length of the word.
 function filterLongWords(arr, len){
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i].length > len){
-            len = arr[i].length;
-        }
-    }
-    return len;
+    return arr.filter(f => f.length > len);
 }
 let arrNames = ["Nahom", "Michal", "Lenovox"];
 let wordLength = 5;
