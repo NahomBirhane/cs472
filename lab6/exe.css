@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+    padding: 0px;;
+}
+
+h1{
+    background-color: #115156;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    color: rgb(255, 244, 244);
+}
+
+.lab6{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: "GDS Transport",arial,sans-serif;
+}
+
+.horizontal{
+    border: none; 
+    background-color: rgb(27, 96, 96);
+    height: 10px;
+  }
+  .foo{
+    background-color: #f3f2f1;
+    padding-bottom: 10px;
+    margin: 0px;
+}
