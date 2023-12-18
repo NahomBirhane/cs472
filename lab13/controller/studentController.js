@@ -1,5 +1,5 @@
-let Student = require("../model/student");
 
+let Student = require("../model/student");
 
 let controller = {
      
@@ -28,7 +28,6 @@ let controller = {
 
     createStudent: function(req, res, next){
         let {id, name, program} = req.body;
-
         let student = new Student(id, name, program);
         let newCreatedStudent = student.addStudent();
         if(newCreatedStudent)
@@ -38,7 +37,6 @@ let controller = {
     },
 
     updateStudent: function (req, res, next) { 
-       
         let { oldId, id, name, program } = req.body;
         if (id && name && program) {
             let newStudent = new Student(parseInt(id), name, program);
@@ -49,8 +47,6 @@ let controller = {
         }
     },
 
-    
-
     filterByProgram: function (req, res, next) {
         let program = req.query.program;
         let filteredStudents = Student.filterByProgram(program);
@@ -58,7 +54,7 @@ let controller = {
             res.status(200).json(filteredStudents);
         } else {
             res.status(404).json({ message: "Search not found"});
-    }
+        }
     },
 }
  
